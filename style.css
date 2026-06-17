@@ -1,1 +1,142 @@
-/* for css functionlity */
+/* ===== KALE & CO. — MAIN STYLESHEET ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── TOKENS ── */
+:root {
+  --green-deep:   #1B4332;
+  --green-mid:    #2D6A4F;
+  --green-light:  #74C69D;
+  --cream:        #FAF7F2;
+  --warm-white:   #FFFFFF;
+  --terracotta:   #C0693A;
+  --text-dark:    #1A1A1A;
+  --text-mid:     #4A4A4A;
+  --text-light:   #888888;
+  --border:       #E8E2D9;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  --radius:       6px;
+  --shadow:       0 2px 16px rgba(27,67,50,0.08);
+  --transition:   0.25s ease;
+}
+
+/* ── RESET & BASE ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.65;
+  font-size: 16px;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── TYPOGRAPHY ── */
+h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.2; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 700; }
+p  { color: var(--text-mid); }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  background: var(--green-deep) !important;
+  padding: 0.9rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.navbar-brand {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cream) !important;
+}
+.navbar-brand span { color: var(--green-light); }
+.navbar-nav .nav-link {
+  color: rgba(250,247,242,0.82) !important;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.4rem 1rem !important;
+  transition: color var(--transition);
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active { color: var(--green-light) !important; }
+.navbar-toggler { border-color: rgba(116,198,157,0.4) !important; }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28116,198,157,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* ── HERO ── */
+.section { padding: 80px 0; }
+.section-sm { padding: 50px 0; }
+
+.hero-img-placeholder {
+  width: 100%;
+  height: 480px;
+  background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-deep) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+}
+
+/* ── BUTTONS ── */
+.btn-primary-kale {
+  background: var(--green-deep);
+  color: var(--cream);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+  display: inline-block;
+}
+.btn-primary-kale:hover {
+  background: var(--green-mid);
+  transform: translateY(-2px);
+  color: var(--cream);
+}
+.btn-outline-kale {
+  background: transparent;
+  color: var(--green-deep);
+  border: 2px solid var(--green-deep);
+  border-radius: var(--radius);
+  padding: 0.7rem 1.7rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  display: inline-block;
+}
+.btn-outline-kale:hover { background: var(--green-deep); color: var(--cream); }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.6s ease both; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .section { padding: 52px 0; }
+  .hero-img-placeholder { height: 280px; }
+}

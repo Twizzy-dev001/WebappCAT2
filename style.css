@@ -205,3 +205,33 @@ p  { color: var(--text-mid); }
 .section-title { margin-bottom: 3rem; }
 .bg-cream { background: var(--cream); }
 
+/* ── FOOTER ── */
+footer {
+  background: var(--green-deep);
+  color: rgba(250,247,242,0.8);
+  padding: 60px 0 24px;
+}
+footer h5 {
+  font-family: var(--font-display);
+  color: var(--cream);
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+footer a { color: rgba(250,247,242,0.7); transition: color var(--transition); }
+footer a:hover { color: var(--green-light); }
+footer ul { list-style: none; padding: 0; }
+footer ul li { margin-bottom: 0.5rem; font-size: 0.9rem; }
+.footer-bottom {
+  border-top: 1px solid rgba(250,247,242,0.12);
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 0.82rem;
+  color: rgba(250,247,242,0.45);
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cream);
+}
+.footer-brand span { color: var(--green-light); }

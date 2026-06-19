@@ -235,3 +235,37 @@ footer ul li { margin-bottom: 0.5rem; font-size: 0.9rem; }
   color: var(--cream);
 }
 .footer-brand span { color: var(--green-light); }
+
+/* ── DARK MODE ── */
+body.dark-mode {
+  --cream:      #0f1a14;
+  --warm-white: #1a2d22;
+  --text-dark:  #f0ede7;
+  --text-mid:   #b8c4bc;
+  --border:     #2a3d30;
+}
+body.dark-mode .navbar  { background: #0b1410 !important; }
+body.dark-mode footer   { background: #0b1410; }
+body.dark-mode .kale-card { background: #1a2d22; }
+
+/* ── DARK MODE TOGGLE BUTTON ── */
+#darkToggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--green-deep);
+  color: var(--cream);
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition);
+}
+#darkToggle:hover { background: var(--green-mid); }

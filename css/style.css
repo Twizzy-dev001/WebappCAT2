@@ -4,12 +4,12 @@
 
 /* ── TOKENS ── */
 :root {
-  --green-deep:   #1B4332;
-  --green-mid:    #2D6A4F;
-  --green-light:  #74C69D;
-  --cream:        #FAF7F2;
+  --brown-deep:   #1C0F0A;
+  --brown-mid:    #3B1F0A;
+  --lime:         #C8D96F;
+  --cream:        #FAF8F2;
   --warm-white:   #FFFFFF;
-  --terracotta:   #C0693A;
+  --terra:        #C0693A;
   --text-dark:    #1A1A1A;
   --text-mid:     #4A4A4A;
   --text-light:   #888888;
@@ -19,8 +19,9 @@
   --font-body:    'Inter', system-ui, sans-serif;
 
   --radius:       6px;
-  --shadow:       0 2px 16px rgba(27,67,50,0.08);
+  --shadow:       0 2px 16px rgba(28,15,10,0.12);
   --transition:   0.25s ease;
+
 }
 
 /* ── RESET & BASE ── */

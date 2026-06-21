@@ -31,47 +31,84 @@
 
 
 <!-- HERO -->
-<section style="
-  min-height: 92vh;
-  background: linear-gradient(rgba(28,15,10,0.62), rgba(28,15,10,0.55)),
-  url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  color: white;
-">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <span class="eyebrow" style="color:var(--lime);">Nairobi's Organic Destination</span>
-        <h1 style="color:white; font-size:clamp(2.8rem,6vw,5rem); line-height:1.1; margin-top:0.5rem;">
-          Eat Well.<br>Live Well.<br><em style="color:var(--lime);">Feel Well.</em>
-        </h1>
-        <p style="color:rgba(255,255,255,0.82); font-size:1.1rem; max-width:480px; margin-top:1.2rem;">
-          Kale &amp; Co. brings together a curated organic grocery, a warm neighbourhood café, and honest food that tastes exactly like it should.
-        </p>
-        <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="#" class="btn-primary-kale">Shop Groceries</a>
-          <a href="#" class="btn-outline-kale" style="color:white; border-color:white;">View Café Menu</a>
+<!-- HERO CAROUSEL -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div style="min-height:92vh; background:linear-gradient(rgba(28,15,10,0.62),rgba(28,15,10,0.55)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600') center/cover no-repeat; display:flex; align-items:center;">
+        <div class="container">
+          <div class="col-lg-7">
+            <span class="eyebrow" style="color:var(--lime);">Nairobi's Organic Destination</span>
+            <h1 style="color:white; font-size:clamp(2.8rem,6vw,5rem); line-height:1.1; margin-top:0.5rem;">
+              Eat Well.<br>Live Well.<br><em style="color:var(--lime);">Feel Well.</em>
+            </h1>
+            <p style="color:rgba(255,255,255,0.82); font-size:1.1rem; max-width:480px; margin-top:1.2rem;">
+              Kale &amp; Co. brings together a curated organic grocery, a warm neighbourhood café, and honest food that tastes exactly like it should.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#" class="btn-primary-kale">Shop Groceries</a>
+              <a href="#" class="btn-outline-kale" style="color:white; border-color:white;">View Café Menu</a>
+            </div>
+          </div>
         </div>
-        <div class="row mt-5 g-3" style="max-width:400px;">
-          <div class="col-4 text-center">
-            <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--lime);">200+</div>
-            <div style="font-size:0.8rem;color:rgba(255,255,255,0.65);font-weight:500;">Organic SKUs</div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div style="min-height:92vh; background:linear-gradient(rgba(28,15,10,0.55),rgba(28,15,10,0.5)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600') center/cover no-repeat; display:flex; align-items:center;">
+        <div class="container">
+          <div class="col-lg-7">
+            <span class="eyebrow" style="color:var(--lime);">In-Store Café</span>
+            <h1 style="color:white; font-size:clamp(2.8rem,6vw,5rem); line-height:1.1; margin-top:0.5rem;">
+              Coffee Worth<br><em style="color:var(--lime);">Waking Up For.</em>
+            </h1>
+            <p style="color:rgba(255,255,255,0.82); font-size:1.1rem; max-width:480px; margin-top:1.2rem;">
+              Single-origin Mt. Kenya beans, roasted weekly. Come in for a flat white and stay for the food.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="pages/menu.html" class="btn-primary-kale">See the Menu</a>
+            </div>
           </div>
-          <div class="col-4 text-center">
-            <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--lime);">4.9★</div>
-            <div style="font-size:0.8rem;color:rgba(255,255,255,0.65);font-weight:500;">Google Rating</div>
-          </div>
-          <div class="col-4 text-center">
-            <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--lime);">6yrs</div>
-            <div style="font-size:0.8rem;color:rgba(255,255,255,0.65);font-weight:500;">In Westlands</div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div style="min-height:92vh; background:linear-gradient(rgba(28,15,10,0.62),rgba(28,15,10,0.55)), url('https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1600') center/cover no-repeat; display:flex; align-items:center;">
+        <div class="container">
+          <div class="col-lg-7">
+            <span class="eyebrow" style="color:var(--lime);">Farm Direct</span>
+            <h1 style="color:white; font-size:clamp(2.8rem,6vw,5rem); line-height:1.1; margin-top:0.5rem;">
+              From the Farm<br><em style="color:var(--lime);">To Your Table.</em>
+            </h1>
+            <p style="color:rgba(255,255,255,0.82); font-size:1.1rem; max-width:480px; margin-top:1.2rem;">
+              We work with 40+ Kenyan farmers directly. No middlemen, no compromises, just honest organic produce.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="pages/about.html" class="btn-primary-kale">Our Story</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
 
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
 
 <!-- FEATURES STRIP -->
 <section style="background:var(--cream); padding:60px 0;">

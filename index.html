@@ -160,20 +160,24 @@
 </section>
 
 <!-- CAFÉ TEASER -->
-<section class="section" style="background:linear-gradient(135deg,#1B4332 60%,#2D6A4F 100%); color:var(--cream);">
+<section style="
+  min-height: 70vh;
+  background: linear-gradient(rgba(28,15,10,0.45), rgba(28,15,10,0.70)),
+  url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600') center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+">
   <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6">
-        <div style="background:rgba(255,255,255,0.06); border-radius:12px; height:320px; display:flex; align-items:center; justify-content:center; font-size:5rem;">☕</div>
-      </div>
-      <div class="col-lg-6">
-        <span class="eyebrow">In-Store Café</span>
-        <h2 style="color:var(--cream);">A Corner Worth Staying For</h2>
-        <p style="color:rgba(250,247,242,0.75); margin-top:1rem; max-width:440px;">
-          Our café serves single-origin coffee, cold-pressed juices, and a rotating menu of wholesome bowls and toasts — made fresh in our open kitchen every morning.
-        </p>
-        <a href="#" class="btn-terra mt-4" style="display:inline-block;">See the Menu</a>
-      </div>
+    <div class="col-lg-6">
+      <span class="eyebrow" style="color:var(--lime);">In-Store Café</span>
+      <h2 style="color:white; font-size:clamp(2rem,4vw,3.2rem); line-height:1.2; margin-top:0.5rem;">
+        A Corner Worth<br>Staying For
+      </h2>
+      <p style="color:rgba(255,255,255,0.82); max-width:440px; margin-top:1rem;">
+        Our café serves single-origin coffee, cold-pressed juices, and a rotating menu of wholesome bowls and toasts — made fresh in our open kitchen every morning.
+      </p>
+      <a href="pages/menu.html" class="btn-primary-kale mt-4" style="display:inline-block;">See the Menu</a>
     </div>
   </div>
 </section>
@@ -221,13 +225,13 @@
  <!-- NEWSLETTER -->
 <section class="section-sm" style="background:var(--terracotta);">
   <div class="container text-center" style="color:white; max-width:560px;">
-    <span class="eyebrow" style="color:rgba(255,255,255,0.75);">Stay in the loop</span>
-    <h2 style="color:white; margin-bottom:0.8rem;">Weekly Picks, Recipes & Offers</h2>
-    <p style="color:rgba(255,255,255,0.82); margin-bottom:1.5rem;">No spam, ever. Just good food news every Friday.</p>
+    <span class="eyebrow" style="color:var(--lime);">Stay in the loop</span>
+<h2 style="color:var(--brown-deep); margin-bottom:0.8rem;">Weekly Picks, Recipes & Offers</h2>
+<p style="color:var(--brown-mid); margin-bottom:1.5rem;">No spam, ever. Just good food news every Friday.</p>
     <form id="newsletterForm" class="d-flex flex-column flex-sm-row gap-2 justify-content-center">
       <input type="email" id="newsletterEmail" placeholder="your@email.com"
         style="border:none; border-radius:var(--radius); padding:0.75rem 1.2rem; font-size:0.9rem; flex:1; max-width:300px; outline:none;" />
-      <button type="submit" class="btn-primary-kale" style="background:var(--green-deep); white-space:nowrap;">Subscribe Free</button>
+     <button type="submit" class="btn-primary-kale" style="background:var(--brown-deep); color:var(--lime); white-space:nowrap; border: 2px solid var(--lime);">Subscribe Free</button>
     </form>
     <div id="newsletterFeedback" style="margin-top:0.8rem; font-size:0.88rem; min-height:1.2rem;"></div>
   </div>

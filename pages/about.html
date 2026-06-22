@@ -4,13 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us — Kale & Co.</title>
-  <meta name="description" content="Learn about Kale & Co., our story, our team, and our farmer partners." />
   <link rel="stylesheet" href="../vendor/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 
-    <!-- NAVBAR -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="../index.html">Kale <span>&</span> Co.</a>
@@ -26,19 +25,28 @@
   </div>
 </nav>
 
-<!-- PAGE HEADER -->
-<section style="background:var(--green-deep); padding:70px 0 60px; color:var(--cream);">
+<!-- HERO BANNER -->
+<section style="
+  min-height: 60vh;
+  background: linear-gradient(rgba(28,15,10,0.55), rgba(28,15,10,0.65)),
+  url('https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1600') center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+">
   <div class="container">
-    <span class="eyebrow" style="color:var(--green-light);">Our Story</span>
-    <h1>Rooted in Good Food</h1>
-    <p style="max-width:520px; color:rgba(250,247,242,0.78); margin-top:0.8rem;">
+    <span class="eyebrow" style="color:var(--lime);">Our Story</span>
+    <h1 style="color:white; font-size:clamp(2.8rem,6vw,5rem); line-height:1.1; margin-top:0.5rem;">
+      Rooted in<br><em style="color:var(--lime);">Good Food.</em>
+    </h1>
+    <p style="color:rgba(255,255,255,0.82); font-size:1.1rem; max-width:520px; margin-top:1.2rem;">
       From a single market stall in 2018 to Nairobi's go-to organic destination — here's how we got here.
     </p>
   </div>
 </section>
 
-<!-- STORY -->
-<section class="section bg-cream">
+<!-- STORY SECTION -->
+<section style="padding:80px 0; background:var(--cream);">
   <div class="container">
     <div class="row align-items-center g-5">
       <div class="col-lg-6">
@@ -49,84 +57,123 @@
         <p class="mt-3">Today, Kale &amp; Co. stocks over 200 certified-organic products, works directly with 40+ Kenyan farmers, and serves roughly 300 customers a week in-store.</p>
       </div>
       <div class="col-lg-6">
-        <div style="background:linear-gradient(135deg,#d8f3dc,#b7e4c7); border-radius:12px; height:380px; display:flex; align-items:center; justify-content:center; font-size:6rem;">🌱</div>
+        <div style="
+          height:420px;
+          background: url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=800') center/cover;
+          border-radius:16px;
+          box-shadow: 0 12px 40px rgba(28,15,10,0.18);
+        "></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- values   -->
-<section class="section" style="background:var(--green-deep); color:var(--cream);">
+<!-- VALUES -->
+<section style="padding:80px 0; background:var(--brown-deep);">
   <div class="container">
-    <div class="section-title text-center">
-      <span class="eyebrow" style="color:var(--green-light);">What Drives Us</span>
-      <h2 style="color:var(--cream);">Three Things We Never Compromise On</h2>
+    <div class="text-center mb-5">
+      <span class="eyebrow" style="color:var(--lime);">What Drives Us</span>
+      <h2 style="color:white;">Three Things We Never Compromise On</h2>
     </div>
     <div class="row g-4">
-      <div class="col-md-4 text-center">
-        <div style="font-size:2.5rem; margin-bottom:1rem;">🌍</div>
-        <h3 style="color:var(--cream); font-size:1.15rem;">Traceability</h3>
-        <p style="color:rgba(250,247,242,0.72); font-size:0.9rem; margin-top:0.5rem;">Every product on our shelf has a name and a postcode behind it. We visit every supplier at least twice a year.</p>
+      <div class="col-md-4">
+        <div style="
+          height:280px;
+          background: linear-gradient(rgba(28,15,10,0.45), rgba(28,15,10,0.75)),
+          url('https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=600') center/cover;
+          border-radius:16px;
+          display:flex;
+          flex-direction:column;
+          justify-content:flex-end;
+          padding:1.8rem;
+        ">
+          <h3 style="color:var(--lime); font-size:1.2rem;">🌍 Traceability</h3>
+          <p style="color:rgba(255,255,255,0.8); font-size:0.88rem; margin-top:0.5rem;">Every product has a name and postcode behind it. We visit every supplier twice a year.</p>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <div style="font-size:2.5rem; margin-bottom:1rem;">🤲</div>
-        <h3 style="color:var(--cream); font-size:1.15rem;">Fair Pay</h3>
-        <p style="color:rgba(250,247,242,0.72); font-size:0.9rem; margin-top:0.5rem;">We pay farmers 20–30% above market rate and commit to minimum purchase agreements so they can plan ahead.</p>
+      <div class="col-md-4">
+        <div style="
+          height:280px;
+          background: linear-gradient(rgba(28,15,10,0.45), rgba(28,15,10,0.75)),
+          url('https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=600') center/cover;
+          border-radius:16px;
+          display:flex;
+          flex-direction:column;
+          justify-content:flex-end;
+          padding:1.8rem;
+        ">
+          <h3 style="color:var(--lime); font-size:1.2rem;">🤲 Fair Pay</h3>
+          <p style="color:rgba(255,255,255,0.8); font-size:0.88rem; margin-top:0.5rem;">We pay farmers 20–30% above market rate with minimum purchase agreements.</p>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <div style="font-size:2.5rem; margin-bottom:1rem;">♻️</div>
-        <h3 style="color:var(--cream); font-size:1.15rem;">Zero Waste</h3>
-        <p style="color:rgba(250,247,242,0.72); font-size:0.9rem; margin-top:0.5rem;">Unsold produce goes to a local children's home. Our packaging is 100% compostable or reusable glass.</p>
+      <div class="col-md-4">
+        <div style="
+          height:280px;
+          background: linear-gradient(rgba(28,15,10,0.45), rgba(28,15,10,0.75)),
+          url('https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600') center/cover;
+          border-radius:16px;
+          display:flex;
+          flex-direction:column;
+          justify-content:flex-end;
+          padding:1.8rem;
+        ">
+          <h3 style="color:var(--lime); font-size:1.2rem;">♻️ Zero Waste</h3>
+          <p style="color:rgba(255,255,255,0.8); font-size:0.88rem; margin-top:0.5rem;">Unsold produce goes to a local children's home. Packaging is 100% compostable.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TEAM -->
-<section class="section bg-cream">
+<section style="padding:80px 0; background:var(--cream);">
   <div class="container">
-    <div class="section-title text-center">
+    <div class="text-center mb-5">
       <span class="eyebrow">The People</span>
       <h2>Meet the Team</h2>
     </div>
-    <div class="row g-4 justify-content-center">
+    <div class="row g-4">
       <div class="col-sm-6 col-lg-3">
         <div class="kale-card text-center">
-          <div style="height:140px; background:linear-gradient(135deg,#d8f3dc,#b7e4c7); display:flex; align-items:center; justify-content:center; font-size:3rem;">👩🏾</div>
+          <div style="height:180px; background:linear-gradient(rgba(28,15,10,0.2),rgba(28,15,10,0.5)), url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400') center/cover; display:flex; align-items:flex-end; justify-content:center; padding-bottom:1rem;">
+            <span style="color:white; font-weight:600; font-size:0.9rem;">Njambi Mwangi</span>
+          </div>
           <div class="kale-card-body">
-            <h3 style="font-size:1rem;">Njambi Mwangi</h3>
-            <p style="font-size:0.82rem; color:var(--terracotta); font-weight:600;">Founder & CEO</p>
+            <p style="font-size:0.82rem; color:var(--terra); font-weight:600;">Founder & CEO</p>
             <p style="font-size:0.82rem; margin-top:0.5rem;">Former agronomist. Obsessed with soil health and the perfect flat white.</p>
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="kale-card text-center">
-          <div style="height:140px; background:linear-gradient(135deg,#fdeadf,#f4a47d); display:flex; align-items:center; justify-content:center; font-size:3rem;">👨🏽‍🍳</div>
+          <div style="height:180px; background:linear-gradient(rgba(28,15,10,0.2),rgba(28,15,10,0.5)), url('https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400') center/cover; display:flex; align-items:flex-end; justify-content:center; padding-bottom:1rem;">
+            <span style="color:white; font-weight:600; font-size:0.9rem;">Brian Omondi</span>
+          </div>
           <div class="kale-card-body">
-            <h3 style="font-size:1rem;">Brian Omondi</h3>
-            <p style="font-size:0.82rem; color:var(--terracotta); font-weight:600;">Head Chef & Menu Director</p>
+            <p style="font-size:0.82rem; color:var(--terra); font-weight:600;">Head Chef</p>
             <p style="font-size:0.82rem; margin-top:0.5rem;">Trained in Cape Town. Believes every ingredient deserves respect.</p>
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="kale-card text-center">
-          <div style="height:140px; background:linear-gradient(135deg,#e0f0ff,#b3d4f5); display:flex; align-items:center; justify-content:center; font-size:3rem;">👩🏽</div>
+          <div style="height:180px; background:linear-gradient(rgba(28,15,10,0.2),rgba(28,15,10,0.5)), url('https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400') center/cover; display:flex; align-items:flex-end; justify-content:center; padding-bottom:1rem;">
+            <span style="color:white; font-weight:600; font-size:0.9rem;">Aisha Otieno</span>
+          </div>
           <div class="kale-card-body">
-            <h3 style="font-size:1rem;">Aisha Otieno</h3>
-            <p style="font-size:0.82rem; color:var(--terracotta); font-weight:600;">Sourcing & Farmer Relations</p>
+            <p style="font-size:0.82rem; color:var(--terra); font-weight:600;">Sourcing & Farmer Relations</p>
             <p style="font-size:0.82rem; margin-top:0.5rem;">Spends most of her time on farms. Knows every supplier's kids by name.</p>
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="kale-card text-center">
-          <div style="height:140px; background:linear-gradient(135deg,#f3e8ff,#d8b4fe); display:flex; align-items:center; justify-content:center; font-size:3rem;">👨🏾</div>
+          <div style="height:180px; background:linear-gradient(rgba(28,15,10,0.2),rgba(28,15,10,0.5)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400') center/cover; display:flex; align-items:flex-end; justify-content:center; padding-bottom:1rem;">
+            <span style="color:white; font-weight:600; font-size:0.9rem;">Kevin Kariuki</span>
+          </div>
           <div class="kale-card-body">
-            <h3 style="font-size:1rem;">Kevin Kariuki</h3>
-            <p style="font-size:0.82rem; color:var(--terracotta); font-weight:600;">Café Manager & Barista</p>
-            <p style="font-size:0.82rem; margin-top:0.5rem;">Winner of the 2024 Kenya Barista Championship. Your latte is in good hands.</p>
+            <p style="font-size:0.82rem; color:var(--terra); font-weight:600;">Café Manager & Barista</p>
+            <p style="font-size:0.82rem; margin-top:0.5rem;">2024 Kenya Barista Champion. Your latte is in good hands.</p>
           </div>
         </div>
       </div>
@@ -169,11 +216,6 @@
     </div>
   </div>
 </footer>
-
-<button id="darkToggle" title="Toggle dark mode">🌙</button>
-
-
-
 
 <script src="../vendor/bootstrap.bundle.min.js"></script>
 <script src="../js/main.js"></script>

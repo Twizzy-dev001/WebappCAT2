@@ -351,3 +351,7 @@ body.dark-mode .kale-card { background: #1a2d22; }
   opacity: 1;
   transform: translateY(0);
 }
+/* ── CONTACT INFO CARDS ── */
+.contact-info .kale-card {
+  height: auto !important;
+}

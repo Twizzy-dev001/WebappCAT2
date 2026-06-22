@@ -26,7 +26,144 @@
   </div>
 </nav>
 
+<!-- HERO -->
+<section style="
+  min-height: 45vh;
+  background: linear-gradient(rgba(28,15,10,0.60), rgba(28,15,10,0.70)),
+  url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600') center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--lime);">We're Easy to Reach</span>
+    <h1 style="color:white; font-size:clamp(2.4rem,5vw,4rem); line-height:1.1; margin-top:0.5rem;">
+      Get in <em style="color:var(--lime);">Touch.</em>
+    </h1>
+    <p style="color:rgba(255,255,255,0.82); font-size:1rem; max-width:480px; margin-top:1rem;">
+      Whether you have a question, a wholesale enquiry, or just want to say hi — we respond within 24 hours.
+    </p>
+  </div>
+</section>
 
+<!-- CONTACT SECTION -->
+<section style="padding:80px 0; background:var(--cream);">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- FORM -->
+      <div class="col-lg-7">
+        <span class="eyebrow">Send a Message</span>
+        <h2 class="mb-4">We'd Love to Hear From You</h2>
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label for="contactName" style="font-weight:600; font-size:0.88rem;" class="form-label">Full Name</label>
+            <input type="text" id="contactName" class="form-control" placeholder="Amina Wambui"
+              style="border-color:var(--border); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.9rem;" />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="mb-3">
+            <label for="contactEmail" style="font-weight:600; font-size:0.88rem;" class="form-label">Email Address</label>
+            <input type="email" id="contactEmail" class="form-control" placeholder="amina@email.com"
+              style="border-color:var(--border); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.9rem;" />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="mb-3">
+            <label for="contactSubject" style="font-weight:600; font-size:0.88rem;" class="form-label">Subject</label>
+            <select id="contactSubject" class="form-select"
+              style="border-color:var(--border); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.9rem;">
+              <option value="">Select a topic…</option>
+              <option>Delivery enquiry</option>
+              <option>Wholesale / bulk order</option>
+              <option>Catering request</option>
+              <option>Product question</option>
+              <option>Feedback</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="contactMessage" style="font-weight:600; font-size:0.88rem;" class="form-label">Message</label>
+            <textarea id="contactMessage" class="form-control" rows="5" placeholder="What's on your mind?"
+              style="border-color:var(--border); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.9rem; resize:vertical;"></textarea>
+            <div class="invalid-feedback"></div>
+          </div>
+          <button type="submit" class="btn-primary-kale" style="width:100%; text-align:center;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="col-lg-5">
+        <span class="eyebrow">Find Us</span>
+        <h2 class="mb-4">Visit the Store</h2>
+        <div class="kale-card mb-3">
+          <div class="kale-card-body">
+            <h3 style="font-size:1rem; margin-bottom:0.3rem;">📍 Address</h3>
+            <p style="font-size:0.88rem;">Sarit Centre, Ground Floor<br>Ring Road Westlands<br>Nairobi, Kenya</p>
+          </div>
+        </div>
+        <div class="kale-card mb-3">
+          <div class="kale-card-body">
+            <h3 style="font-size:1rem; margin-bottom:0.3rem;">🕐 Hours</h3>
+            <p style="font-size:0.88rem;">
+              Monday – Saturday: 7:00 AM – 8:00 PM<br>
+              Sunday: 8:00 AM – 6:00 PM
+            </p>
+          </div>
+        </div>
+        <div class="kale-card mb-3">
+          <div class="kale-card-body">
+            <h3 style="font-size:1rem; margin-bottom:0.3rem;">📞 Phone & WhatsApp</h3>
+            <p style="font-size:0.88rem;">+254 712 345 678</p>
+          </div>
+        </div>
+        <div class="kale-card">
+          <div class="kale-card-body">
+            <h3 style="font-size:1rem; margin-bottom:0.3rem;">✉️ Email</h3>
+            <p style="font-size:0.88rem;">
+              General: <a href="mailto:hello@kaleandco.co.ke" style="color:var(--brown-deep); font-weight:600;">hello@kaleandco.co.ke</a><br>
+              Wholesale: <a href="mailto:wholesale@kaleandco.co.ke" style="color:var(--brown-deep); font-weight:600;">wholesale@kaleandco.co.ke</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">Kale <span>&</span> Co.</div>
+        <p style="margin-top:0.8rem; font-size:0.88rem; max-width:280px;">Nairobi's organic grocery and café. Committed to honest food, local farmers, and your wellbeing since 2018.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Visit Us</h5>
+        <p style="font-size:0.88rem;">Sarit Centre, Ring Road Westlands<br>Nairobi, Kenya</p>
+        <p style="font-size:0.88rem; margin-top:0.5rem;">📞 +254 712 345 678<br>✉️ hello@kaleandco.co.ke</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Kale & Co. All rights reserved.</span>
+      <span>Made with 🌿 in Nairobi</span>
+    </div>
+  </div>
+</footer>
 
 <script src="../vendor/bootstrap.bundle.min.js"></script>
 <script src="../js/main.js"></script>

@@ -355,3 +355,54 @@ body.dark-mode .kale-card { background: #1a2d22; }
 .contact-info .kale-card {
   height: auto !important;
 }
+
+/* ── MENU ITEMS ── */
+.menu-item {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
+}
+.menu-item:hover { transform: translateY(-2px); }
+.menu-item-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+.menu-item-desc {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-top: 0.2rem;
+}
+.menu-item-price {
+  font-weight: 700;
+  color: var(--brown-deep);
+  white-space: nowrap;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ── TAB BUTTONS ── */
+.tab-btn {
+  background: transparent;
+  border: 2px solid var(--brown-deep);
+  color: var(--brown-deep);
+  border-radius: 50px;
+  padding: 0.7rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab-btn:hover { background: var(--brown-deep); color: var(--cream); }
+.tab-btn.active { background: var(--brown-deep); color: var(--lime); }
+
+/* ── TAB PANEL TRANSITION ── */
+.tab-content-panel {
+  animation: fadeUp 0.4s ease both;
+}

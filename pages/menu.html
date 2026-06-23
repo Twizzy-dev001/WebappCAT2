@@ -1,3 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Menu — Kale & Co.</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- content coming -->
+
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+<script>
+function switchTab(tab) {
+  document.getElementById('cafe').style.display = tab === 'cafe' ? 'block' : 'none';
+  document.getElementById('grocery').style.display = tab === 'grocery' ? 'block' : 'none';
+  document.getElementById('tabCafe').classList.toggle('active', tab === 'cafe');
+  document.getElementById('tabGrocery').classList.toggle('active', tab === 'grocery');
+}
+</script>
+</body>
+</html>
+
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
@@ -35,3 +61,369 @@
     </p>
   </div>
 </section>
+<!-- TAB SWITCHER -->
+<section style="background:var(--cream); padding:60px 0;">
+  <div class="container">
+
+    <!-- TAB BUTTONS -->
+    <div class="d-flex justify-content-center gap-3 mb-5">
+      <button id="tabCafe" class="tab-btn active" onclick="switchTab('cafe')">
+        ☕ Café Menu
+      </button>
+      <button id="tabGrocery" class="tab-btn" onclick="switchTab('grocery')">
+        🛒 Grocery List
+      </button>
+    </div>
+
+    <!-- CAFÉ CONTENT -->
+    <div id="cafe" class="tab-content-panel">
+
+      <div class="divider"></div>
+
+<!-- DRINKS WITH PHOTOS -->
+<div class="mt-5">
+  <div style="text-align:center; margin-bottom:2rem;">
+    <span class="eyebrow">Beverages</span>
+    <h2>Coffee & Cold Press</h2>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.08); transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="height:200px; background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600') center/cover;"></div>
+        <div style="padding:1.2rem; text-align:center;">
+          <h3 style="font-size:1rem;">Flat White ☕</h3>
+          <p style="font-size:0.82rem; color:var(--text-light);">Double espresso · Silky steamed milk · Mt. Kenya AA</p>
+          <div style="margin-top:0.8rem; font-weight:700; color:var(--brown-deep);">KSh 280</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.08); transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="height:200px; background:url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600') center/cover;"></div>
+        <div style="padding:1.2rem; text-align:center;">
+          <h3 style="font-size:1rem;">Cold Brew 🧊</h3>
+          <p style="font-size:0.82rem; color:var(--text-light);">18-hour steep · Smooth · Dangerously drinkable</p>
+          <div style="margin-top:0.8rem; font-weight:700; color:var(--brown-deep);">KSh 320</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.08); transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="height:200px; background:url('https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=600') center/cover;"></div>
+        <div style="padding:1.2rem; text-align:center;">
+          <h3 style="font-size:1rem;">Green Glow Juice 🥒</h3>
+          <p style="font-size:0.82rem; color:var(--text-light);">Kale · Cucumber · Apple · Ginger · Lemon</p>
+          <div style="margin-top:0.8rem; font-weight:700; color:var(--brown-deep);">KSh 350</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.08); transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="height:200px; background:url('images/Turmeric-Latte-Golden-Milk-Recipe-Cover.jpg') center/cover;"></div>
+        <div style="padding:1.2rem; text-align:center;">
+          <h3 style="font-size:1rem;">Golden Latte ✨</h3>
+          <p style="font-size:0.82rem; color:var(--text-light);">Turmeric · Oat Milk · Black Pepper · Honey</p>
+          <div style="margin-top:0.8rem; font-weight:700; color:var(--brown-deep);">KSh 300</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.08); transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="height:200px; background:url('https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600') center/cover;"></div>
+        <div style="padding:1.2rem; text-align:center;">
+          <h3 style="font-size:1rem;">Masala Chai 🫖</h3>
+          <p style="font-size:0.82rem; color:var(--text-light);">Kenyan Tea · Whole Spices · Steamed Milk</p>
+          <div style="margin-top:0.8rem; font-weight:700; color:var(--brown-deep);">KSh 240</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.08); transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="height:200px; background:url('https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600') center/cover;"></div>
+        <div style="padding:1.2rem; text-align:center;">
+          <h3 style="font-size:1rem;">Hibiscus Lemonade 🌺</h3>
+          <p style="font-size:0.82rem; color:var(--text-light);">Hibiscus · Fresh Lemon · Cane Sugar · Ice</p>
+          <div style="margin-top:0.8rem; font-weight:700; color:var(--brown-deep);">KSh 260</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider mt-5"></div>
+
+<!-- LUNCH -->
+<div class="mt-5">
+  <div style="text-align:center; margin-bottom:2rem;">
+    <span class="eyebrow">Lunch · 11:30 AM – 4:00 PM</span>
+    <h2>Afternoon Plates</h2>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.08); transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="height:220px; background:url('https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600') center/cover;"></div>
+        <div style="padding:1.4rem; text-align:center;">
+          <h3 style="font-size:1.1rem;">Green Shakshuka</h3>
+          <p style="font-size:0.82rem; color:var(--text-light);">Tomatillo · Kale · Poached Eggs · Sourdough</p>
+          <div style="margin-top:0.8rem; font-weight:700; color:var(--brown-deep);">KSh 580</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.08); transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="height:220px; background:url('https://images.unsplash.com/photo-1547592180-85f173990554?w=600') center/cover;"></div>
+        <div style="padding:1.4rem; text-align:center;">
+          <h3 style="font-size:1.1rem;">Lentil & Coconut Soup</h3>
+          <p style="font-size:0.82rem; color:var(--text-light);">Red Lentils · Coconut Milk · Turmeric · Rye Bread</p>
+          <div style="margin-top:0.8rem; font-weight:700; color:var(--brown-deep);">KSh 420</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- BREAKFAST -->
+      <div class="mb-5 mt-5">
+        <span class="eyebrow">Breakfast · Until 11:30 AM</span>
+        <h2 class="mb-4">Morning Plates</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="kale-card">
+              <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+                <span class="badge-kale">Vegetarian</span>
+              </div>
+              <div class="kale-card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 style="font-size:1rem;">Avocado Toast</h3>
+                  <strong style="color:var(--brown-deep); white-space:nowrap; margin-left:1rem;">KSh 520</strong>
+                </div>
+                <p style="font-size:0.84rem; margin-top:0.4rem;">Sourdough, smashed Hass avocado, dukkah, poached egg, chilli flakes, lemon.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="kale-card">
+              <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+                <span class="badge-kale">Vegan</span>
+              </div>
+              <div class="kale-card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 style="font-size:1rem;">Chia Pudding Bowl</h3>
+                  <strong style="color:var(--brown-deep); white-space:nowrap; margin-left:1rem;">KSh 440</strong>
+                </div>
+                <p style="font-size:0.84rem; margin-top:0.4rem;">Coconut chia, seasonal fruit, Limuru strawberries, granola, raw honey.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="kale-card">
+              <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1510693206972-df098062cb71?w=600') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+                <span class="badge-terra">Gluten-free</span>
+              </div>
+              <div class="kale-card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 style="font-size:1rem;">Farmer's Omelette</h3>
+                  <strong style="color:var(--brown-deep); white-space:nowrap; margin-left:1rem;">KSh 560</strong>
+                </div>
+                <p style="font-size:0.84rem; margin-top:0.4rem;">Free-range eggs, goat cheese, sun-dried tomatoes, fresh herbs, side salad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="kale-card">
+              <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+                <span class="badge-kale">Vegetarian</span>
+              </div>
+              <div class="kale-card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 style="font-size:1rem;">Green Shakshuka</h3>
+                  <strong style="color:var(--brown-deep); white-space:nowrap; margin-left:1rem;">KSh 580</strong>
+                </div>
+                <p style="font-size:0.84rem; margin-top:0.4rem;">Eggs poached in spiced tomatillo and kale sauce. Served with sourdough.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- LUNCH -->
+      <div class="mt-5">
+        <span class="eyebrow">Lunch · 11:30 AM – 4:00 PM</span>
+        <h2 class="mb-4">Afternoon Bowls & Plates</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="kale-card">
+              <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+                <span class="badge-kale">Vegan</span>
+              </div>
+              <div class="kale-card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 style="font-size:1rem;">The Harvest Bowl</h3>
+                  <strong style="color:var(--brown-deep); white-space:nowrap; margin-left:1rem;">KSh 720</strong>
+                </div>
+                <p style="font-size:0.84rem; margin-top:0.4rem;">Tri-colour quinoa, roasted root vegetables, chickpeas, tahini dressing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="kale-card">
+              <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+                <span class="badge-terra">Gluten-free</span>
+              </div>
+              <div class="kale-card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 style="font-size:1rem;">Grilled Tilapia Plate</h3>
+                  <strong style="color:var(--brown-deep); white-space:nowrap; margin-left:1rem;">KSh 850</strong>
+                </div>
+                <p style="font-size:0.84rem; margin-top:0.4rem;">Lake Victoria tilapia, herb-roasted sweet potato, kale slaw, lemon yoghurt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROCERY CONTENT -->
+    <div id="grocery" class="tab-content-panel" style="display:none;">
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="kale-card">
+            <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=400') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+              <span class="badge-kale">Produce</span>
+            </div>
+            <div class="kale-card-body">
+              <h3 style="font-size:1rem;">Hass Avocados (3pk)</h3>
+              <p style="font-size:0.82rem; margin-top:0.3rem;">Kiambu-grown. Buttery and rich.</p>
+              <strong style="color:var(--brown-deep); margin-top:0.8rem; display:block;">KSh 220</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="kale-card">
+            <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+              <span class="badge-terra">Seasonal</span>
+            </div>
+            <div class="kale-card-body">
+              <h3 style="font-size:1rem;">Strawberries (250g)</h3>
+              <p style="font-size:0.82rem; margin-top:0.3rem;">From Limuru highlands. Picked this morning.</p>
+              <strong style="color:var(--brown-deep); margin-top:0.8rem; display:block;">KSh 220</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="kale-card">
+            <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=400') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+              <span class="badge-kale">Pantry</span>
+            </div>
+            <div class="kale-card-body">
+              <h3 style="font-size:1rem;">Raw Honey (500ml)</h3>
+              <p style="font-size:0.82rem; margin-top:0.3rem;">Unfiltered. Meru Forest beekeepers.</p>
+              <strong style="color:var(--brown-deep); margin-top:0.8rem; display:block;">KSh 680</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="kale-card">
+            <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+              <span class="badge-kale">Produce</span>
+            </div>
+            <div class="kale-card-body">
+              <h3 style="font-size:1rem;">Mixed Herb Bundle</h3>
+              <p style="font-size:0.82rem; margin-top:0.3rem;">Basil, rosemary, thyme & mint.</p>
+              <strong style="color:var(--brown-deep); margin-top:0.8rem; display:block;">KSh 150</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="kale-card">
+            <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+              <span class="badge-kale">Dairy Alt</span>
+            </div>
+            <div class="kale-card-body">
+              <h3 style="font-size:1rem;">Oat Milk (1L)</h3>
+              <p style="font-size:0.82rem; margin-top:0.3rem;">Barista-grade. Made in Nairobi.</p>
+              <strong style="color:var(--brown-deep); margin-top:0.8rem; display:block;">KSh 380</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="kale-card">
+            <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+              <span class="badge-kale">Drinks</span>
+            </div>
+            <div class="kale-card-body">
+              <h3 style="font-size:1rem;">Single-Origin Coffee (250g)</h3>
+              <p style="font-size:0.82rem; margin-top:0.3rem;">Mt. Kenya AA. Roasted weekly.</p>
+              <strong style="color:var(--brown-deep); margin-top:0.8rem; display:block;">KSh 750</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="kale-card">
+            <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+              <span class="badge-terra">Pantry</span>
+            </div>
+            <div class="kale-card-body">
+              <h3 style="font-size:1rem;">Extra Virgin Olive Oil (500ml)</h3>
+              <p style="font-size:0.82rem; margin-top:0.3rem;">Cold-pressed. Tunisian cooperative.</p>
+              <strong style="color:var(--brown-deep); margin-top:0.8rem; display:block;">KSh 1,200</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="kale-card">
+            <div style="height:180px; background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=400') center/cover; display:flex; align-items:flex-end; padding:1rem;">
+              <span class="badge-kale">Pantry</span>
+            </div>
+            <div class="kale-card-body">
+              <h3 style="font-size:1rem;">Organic Quinoa (500g)</h3>
+              <p style="font-size:0.82rem; margin-top:0.3rem;">Tri-colour. High protein, gluten-free.</p>
+              <strong style="color:var(--brown-deep); margin-top:0.8rem; display:block;">KSh 540</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">Kale <span>&</span> Co.</div>
+        <p style="margin-top:0.8rem; font-size:0.88rem; max-width:280px;">Nairobi's organic grocery and café. Committed to honest food, local farmers, and your wellbeing since 2018.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Visit Us</h5>
+        <p style="font-size:0.88rem;">Sarit Centre, Ring Road Westlands<br>Nairobi, Kenya</p>
+        <p style="font-size:0.88rem; margin-top:0.5rem;">📞 +254 712 345 678<br>✉️ hello@kaleandco.co.ke</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Kale & Co. All rights reserved.</span>
+      <span>Made with 🌿 in Nairobi</span>
+
+      
+    </div>
+  </div>
+</footer>

@@ -9,7 +9,213 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Kale <span>&</span> Co.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+<!-- HERO -->
+<section style="
+  min-height: 45vh;
+  background: linear-gradient(rgba(28,15,10,0.65), rgba(28,15,10,0.72)),
+  url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600') center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--lime);">Got Questions?</span>
+    <h1 style="color:white; font-size:clamp(2.4rem,5vw,4rem); line-height:1.1; margin-top:0.5rem;">
+      Frequently <em style="color:var(--lime);">Asked.</em>
+    </h1>
+    <p style="color:rgba(255,255,255,0.82); font-size:1rem; max-width:480px; margin-top:1rem;">
+      Everything you need to know about our shop, café, delivery and sourcing. Can't find what you need? <a href="contact.html" style="color:var(--lime);">Contact us.</a>
+    </p>
+  </div>
+</section>
+
+<!-- FAQ CONTENT -->
+<section style="padding:80px 0; background:var(--cream);">
+  <div class="container" style="max-width:760px;">
+
+    <!-- DELIVERY -->
+    <span class="eyebrow">Ordering & Delivery</span>
+    <div class="accordion mt-3 mb-5" id="faqDelivery">
+      <div class="accordion-item" style="border:1px solid var(--border); border-radius:8px; margin-bottom:0.6rem; overflow:hidden;">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#d1"
+            style="font-family:var(--font-display); font-weight:600; background:white; color:var(--text-dark);">
+            Do you offer home delivery?
+          </button>
+        </h2>
+        <div id="d1" class="accordion-collapse collapse show" data-bs-parent="#faqDelivery">
+          <div class="accordion-body" style="font-size:0.9rem; color:var(--text-mid);">
+            Yes! We deliver across Nairobi including Westlands, Kilimani, Karen, Lavington and the CBD. Orders placed before 11:00 AM are delivered the same afternoon by 5:00 PM. Delivery costs KSh 200, or free on orders over KSh 3,000.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item" style="border:1px solid var(--border); border-radius:8px; margin-bottom:0.6rem; overflow:hidden;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2"
+            style="font-family:var(--font-display); font-weight:600; background:white; color:var(--text-dark);">
+            What is the minimum order for delivery?
+          </button>
+        </h2>
+        <div id="d2" class="accordion-collapse collapse" data-bs-parent="#faqDelivery">
+          <div class="accordion-body" style="font-size:0.9rem; color:var(--text-mid);">
+            The minimum order is KSh 1,500. This helps us keep delivery sustainable and ensures your produce stays fresh in a full insulated bag.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item" style="border:1px solid var(--border); border-radius:8px; margin-bottom:0.6rem; overflow:hidden;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d3"
+            style="font-family:var(--font-display); font-weight:600; background:white; color:var(--text-dark);">
+            How do I place a delivery order?
+          </button>
+        </h2>
+        <div id="d3" class="accordion-collapse collapse" data-bs-parent="#faqDelivery">
+          <div class="accordion-body" style="font-size:0.9rem; color:var(--text-mid);">
+            Currently we take delivery orders via WhatsApp at +254 712 345 678. Send us your list, delivery address and preferred time. We'll confirm availability and send an M-Pesa payment prompt.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORGANIC -->
+    <span class="eyebrow">Organic & Sourcing</span>
+    <div class="accordion mt-3 mb-5" id="faqOrganic">
+      <div class="accordion-item" style="border:1px solid var(--border); border-radius:8px; margin-bottom:0.6rem; overflow:hidden;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o1"
+            style="font-family:var(--font-display); font-weight:600; background:white; color:var(--text-dark);">
+            How do you verify your produce is truly organic?
+          </button>
+        </h2>
+        <div id="o1" class="accordion-collapse collapse" data-bs-parent="#faqOrganic">
+          <div class="accordion-body" style="font-size:0.9rem; color:var(--text-mid);">
+            We only source from farms certified by the Kenya Organic Agriculture Network (KOAN). We also conduct unannounced farm visits at least twice a year and require suppliers to share soil and pesticide testing records.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item" style="border:1px solid var(--border); border-radius:8px; margin-bottom:0.6rem; overflow:hidden;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o2"
+            style="font-family:var(--font-display); font-weight:600; background:white; color:var(--text-dark);">
+            Do you stock imported products?
+          </button>
+        </h2>
+        <div id="o2" class="accordion-collapse collapse" data-bs-parent="#faqOrganic">
+          <div class="accordion-body" style="font-size:0.9rem; color:var(--text-mid);">
+            Yes, for items that can't be grown locally like olive oil, quinoa and certain spices. We source these from certified organic cooperatives and import directly — no middlemen. All imported items are clearly labelled with their country of origin.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item" style="border:1px solid var(--border); border-radius:8px; margin-bottom:0.6rem; overflow:hidden;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#o3"
+            style="font-family:var(--font-display); font-weight:600; background:white; color:var(--text-dark);">
+            Can I visit the farms you work with?
+          </button>
+        </h2>
+        <div id="o3" class="accordion-collapse collapse" data-bs-parent="#faqOrganic">
+          <div class="accordion-body" style="font-size:0.9rem; color:var(--text-mid);">
+            Yes! We run quarterly farm visits for our most loyal customers — usually a Saturday morning trip to Limuru or Nyandarua. Sign up to our newsletter for announcements.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAFÉ -->
+    <span class="eyebrow">The Café</span>
+    <div class="accordion mt-3 mb-5" id="faqCafe">
+      <div class="accordion-item" style="border:1px solid var(--border); border-radius:8px; margin-bottom:0.6rem; overflow:hidden;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1"
+            style="font-family:var(--font-display); font-weight:600; background:white; color:var(--text-dark);">
+            What are the café's opening hours?
+          </button>
+        </h2>
+        <div id="c1" class="accordion-collapse collapse" data-bs-parent="#faqCafe">
+          <div class="accordion-body" style="font-size:0.9rem; color:var(--text-mid);">
+            The café is open Monday to Saturday 7:00 AM – 5:00 PM and Sunday 8:00 AM – 4:00 PM. The kitchen closes 30 minutes before we do — last food orders at 4:30 PM (3:30 PM Sundays).
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item" style="border:1px solid var(--border); border-radius:8px; margin-bottom:0.6rem; overflow:hidden;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2"
+            style="font-family:var(--font-display); font-weight:600; background:white; color:var(--text-dark);">
+            Do you cater for events?
+          </button>
+        </h2>
+        <div id="c2" class="accordion-collapse collapse" data-bs-parent="#faqCafe">
+          <div class="accordion-body" style="font-size:0.9rem; color:var(--text-mid);">
+            Yes, we offer catering for small events up to 80 guests. We specialise in wholesome brunch spreads and grazing tables. Minimum 7 days notice required. Contact us with your event date, location and guest count.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="p-4 text-center" style="background:var(--brown-deep); border-radius:10px; color:var(--cream);">
+      <h3 style="color:var(--cream); font-size:1.1rem;">Still have a question?</h3>
+      <p style="color:rgba(250,248,242,0.78); font-size:0.88rem; margin:0.5rem 0 1.2rem;">Our team is available on WhatsApp and email Monday to Saturday, 8 AM – 6 PM.</p>
+      <a href="contact.html" class="btn-terra">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">Kale <span>&</span> Co.</div>
+        <p style="margin-top:0.8rem; font-size:0.88rem; max-width:280px;">Nairobi's organic grocery and café. Committed to honest food, local farmers, and your wellbeing since 2018.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Visit Us</h5>
+        <p style="font-size:0.88rem;">Sarit Centre, Ring Road Westlands<br>Nairobi, Kenya</p>
+        <p style="font-size:0.88rem; margin-top:0.5rem;">📞 +254 712 345 678<br>✉️ hello@kaleandco.co.ke</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Kale & Co. All rights reserved.</span>
+      <span>Made with 🌿 in Nairobi</span>
+    </div>
+  </div>
+</footer>
 
 <script src="../vendor/bootstrap.bundle.min.js"></script>
 <script src="../js/main.js"></script>

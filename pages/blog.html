@@ -9,7 +9,190 @@
 </head>
 <body>
 
+<!-- navbar and hero section are the same as contact.html -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Kale <span>&</span> Co.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
 
+<!-- HERO -->
+<section style="
+  min-height: 45vh;
+  background: linear-gradient(rgba(28,15,10,0.65), rgba(28,15,10,0.72)),
+  url('https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?w=1600') center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--lime);">From the Kitchen & Farm</span>
+    <h1 style="color:white; font-size:clamp(2.4rem,5vw,4rem); line-height:1.1; margin-top:0.5rem;">
+      Good Food <em style="color:var(--lime);">Reading.</em>
+    </h1>
+    <p style="color:rgba(255,255,255,0.82); font-size:1rem; max-width:480px; margin-top:1rem;">
+      Recipes, farm stories, nutrition notes and seasonal guides — published every week by our team.
+    </p>
+  </div>
+</section>
+
+<!-- BLOG CONTENT -->
+<section style="padding:80px 0; background:var(--cream);">
+  <div class="container">
+
+    <!-- FEATURED POST -->
+    <div class="row g-4 mb-5">
+      <div class="col-lg-6">
+        <div style="
+          height:360px;
+          background:url('https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800') center/cover;
+          border-radius:16px;
+          box-shadow:0 8px 32px rgba(0,0,0,0.12);
+        "></div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center">
+        <div>
+          <span class="badge-kale">Featured</span>
+          <span style="font-size:0.8rem; color:var(--text-light); margin-left:0.8rem;">June 10, 2026</span>
+          <h2 class="mt-2" style="font-size:1.8rem;">Why Kale is Still the King of Leafy Greens</h2>
+          <p class="mt-2" style="font-size:0.9rem;">We've heard the spinach argument. We've tried the moringa case. But after eight years of selling, cooking and eating every green we can find, Njambi makes the definitive case for kale.</p>
+          <div style="margin-top:0.8rem; font-size:0.82rem; color:var(--text-light);">By Njambi Mwangi · 6 min read</div>
+          <a href="#" class="btn-primary-kale mt-3" style="display:inline-block; font-size:0.85rem; padding:0.6rem 1.4rem;">Read Article</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BLOG GRID -->
+    <div class="row g-4 mt-2">
+      <div class="col-md-6 col-lg-4">
+        <div class="kale-card">
+          <div style="height:200px; background:url('https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=400') center/cover;"></div>
+          <div class="kale-card-body">
+            <span class="badge-terra">Recipe</span>
+            <span style="font-size:0.78rem; color:var(--text-light); margin-left:0.6rem;">June 6, 2026</span>
+            <h3 class="mt-2" style="font-size:1rem;">How to Make Raw Honey Granola at Home</h3>
+            <p style="font-size:0.84rem; margin-top:0.4rem;">Three ingredients, one tray, forty minutes. Brian breaks down the simplest granola recipe you'll ever make.</p>
+            <div style="margin-top:0.8rem; font-size:0.8rem; color:var(--text-light);">Brian Omondi · 4 min read</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="kale-card">
+          <div style="height:200px; background:url('https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=400') center/cover;"></div>
+          <div class="kale-card-body">
+            <span class="badge-kale">Farm Story</span>
+            <span style="font-size:0.78rem; color:var(--text-light); margin-left:0.6rem;">May 28, 2026</span>
+            <h3 class="mt-2" style="font-size:1rem;">Meet Jane Wanjiku: The Farmer Behind Our Kale</h3>
+            <p style="font-size:0.84rem; margin-top:0.4rem;">Jane has been farming in Nyandarua since 2012. Aisha spent a morning with her to understand what organic really means.</p>
+            <div style="margin-top:0.8rem; font-size:0.8rem; color:var(--text-light);">Aisha Otieno · 5 min read</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="kale-card">
+          <div style="height:200px; background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400') center/cover;"></div>
+          <div class="kale-card-body">
+            <span class="badge-kale">Coffee</span>
+            <span style="font-size:0.78rem; color:var(--text-light); margin-left:0.6rem;">May 20, 2026</span>
+            <h3 class="mt-2" style="font-size:1rem;">What Makes Mt. Kenya AA Coffee Different?</h3>
+            <p style="font-size:0.84rem; margin-top:0.4rem;">Altitude, rainfall, soil chemistry and hand-picking — Kevin explains why coffee from Mt. Kenya is special.</p>
+            <div style="margin-top:0.8rem; font-size:0.8rem; color:var(--text-light);">Kevin Kariuki · 7 min read</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="kale-card">
+          <div style="height:200px; background:url('https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=400') center/cover;"></div>
+          <div class="kale-card-body">
+            <span class="badge-terra">Recipe</span>
+            <span style="font-size:0.78rem; color:var(--text-light); margin-left:0.6rem;">May 13, 2026</span>
+            <h3 class="mt-2" style="font-size:1rem;">5 Ways to Use Avocado Beyond Toast</h3>
+            <p style="font-size:0.84rem; margin-top:0.4rem;">Avocado pasta, avocado ice cream, avocado dressing. Brian pushes our favourite ingredient further than you'd expect.</p>
+            <div style="margin-top:0.8rem; font-size:0.8rem; color:var(--text-light);">Brian Omondi · 3 min read</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="kale-card">
+          <div style="height:200px; background:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400') center/cover;"></div>
+          <div class="kale-card-body">
+            <span class="badge-kale">Sustainability</span>
+            <span style="font-size:0.78rem; color:var(--text-light); margin-left:0.6rem;">May 5, 2026</span>
+            <h3 class="mt-2" style="font-size:1rem;">Our Zero-Waste Goal: Six Months In</h3>
+            <p style="font-size:0.84rem; margin-top:0.4rem;">We committed to zero-waste operations in January 2026. Here's an honest look at what's working and what we're still figuring out.</p>
+            <div style="margin-top:0.8rem; font-size:0.8rem; color:var(--text-light);">Njambi Mwangi · 5 min read</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="kale-card">
+          <div style="height:200px; background:url('https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400') center/cover;"></div>
+          <div class="kale-card-body">
+            <span class="badge-terra">Seasonal Guide</span>
+            <span style="font-size:0.78rem; color:var(--text-light); margin-left:0.6rem;">April 28, 2026</span>
+            <h3 class="mt-2" style="font-size:1rem;">What to Buy at the Market in June</h3>
+            <p style="font-size:0.84rem; margin-top:0.4rem;">Strawberries from Limuru, passion fruit from Thika, and the best broccoli of the year. A seasonal guide to eating well.</p>
+            <div style="margin-top:0.8rem; font-size:0.8rem; color:var(--text-light);">Aisha Otieno · 4 min read</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pasted FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">Kale <span>&</span> Co.</div>
+        <p style="margin-top:0.8rem; font-size:0.88rem; max-width:280px;">Nairobi's organic grocery and café. Committed to honest food, local farmers, and your wellbeing since 2018.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Visit Us</h5>
+        <p style="font-size:0.88rem;">Sarit Centre, Ring Road Westlands<br>Nairobi, Kenya</p>
+        <p style="font-size:0.88rem; margin-top:0.5rem;">📞 +254 712 345 678<br>✉️ hello@kaleandco.co.ke</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Kale & Co. All rights reserved.</span>
+      <span>Made with 🌿 in Nairobi</span>
+    </div>
+  </div>
+</footer>
 
 <script src="../vendor/bootstrap.bundle.min.js"></script>
 <script src="../js/main.js"></script>

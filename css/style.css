@@ -406,3 +406,32 @@ body.dark-mode .kale-card { background: #1a2d22; }
 .tab-content-panel {
   animation: fadeUp 0.4s ease both;
 }
+
+/* ── GALLERY ── */
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.gallery-item:hover > div:first-child {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(28,15,10,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lime);
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}

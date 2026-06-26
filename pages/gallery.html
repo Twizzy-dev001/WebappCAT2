@@ -10,7 +10,253 @@
 <body>
 
 <!-- Navbar -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Kale <span>&</span> Co.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+<!-- HERO -->
+<section style="
+  min-height: 45vh;
+  background: linear-gradient(rgba(28,15,10,0.62), rgba(28,15,10,0.68)),
+  url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600') center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--lime);">A Visual Story</span>
+    <h1 style="color:white; font-size:clamp(2.4rem,5vw,4rem); line-height:1.1; margin-top:0.5rem;">
+      Our <em style="color:var(--lime);">Gallery.</em>
+    </h1>
+    <p style="color:rgba(255,255,255,0.82); font-size:1rem; max-width:480px; margin-top:1rem;">
+      Click any photo to explore. From field to shelf to plate — this is what honest food looks like.
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY GRID -->
+<section style="padding:80px 0; background:var(--cream);">
+  <div class="container">
+    <div class="row g-3">
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="gallery-item"
+          data-img="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800"
+          data-title="Fresh Kale Harvest"
+         data-desc="Tuscan kale freshly cut at Jane Wanjiku's farm in Nyandarua, harvested at first light to preserve maximum nutrients. Jane has been farming this land since 2012, using only composted soil and rainwater irrigation. Every bunch you buy from us has her name behind it." data-desc="Tuscan kale freshly cut at Jane Wanjiku's farm in Nyandarua, harvested at first light to preserve nutrients.">
+          <div style="height:260px; background:url('https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600') center/cover; border-radius:12px;"></div>
+          <div class="gallery-overlay">🔍 View</div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="gallery-item"
+          data-img="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"
+          data-title="Morning Coffee Service"
+        data-desc="Kevin crafting a flat white at the Kale & Co. café bar. Winner of the 2024 Kenya Barista Championship, Kevin pulls every shot with surgical precision. We serve roughly 80 coffees before noon on a busy Saturday — and not a single one leaves the bar without his approval."  data-desc="Kevin crafting a flat white at the Kale & Co. café bar. We serve roughly 80 coffees before noon on a busy Saturday.">
+          <div style="height:260px; background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600') center/cover; border-radius:12px;"></div>
+          <div class="gallery-overlay">🔍 View</div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="gallery-item"
+          data-img="https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=800"
+          data-title="Raw Honey Shelves"
+          data-desc="Our honey shelf stocked with unfiltered, unheated forest honey sourced directly from wild beekeepers in the Meru Forest. Each jar is labelled with the beekeeper's name, the harvest date, and the exact forest zone it came from. No blending, no additives — just pure liquid gold."data-desc="Our honey shelf stocked with unfiltered forest honey from Meru. Each jar labelled with the beekeeper's name and harvest date.">
+          <div style="height:260px; background:url('https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=600') center/cover; border-radius:12px;"></div>
+          <div class="gallery-overlay">🔍 View</div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="gallery-item"
+          data-img="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800"
+          data-title="Seedling Nursery"
+        data-desc="Aisha on one of her regular farm visits to a seedling nursery in Limuru. We pre-purchase seedlings from two partner farms at the start of every season, helping them plan ahead financially without depending on uncertain market prices. It's a small gesture that makes a big difference to families who've been farming this land for generations."  data-desc="Aisha visiting a seedling nursery in Limuru. We help two farms offset costs by pre-purchasing seedlings.">
+          <div style="height:260px; background:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600') center/cover; border-radius:12px;"></div>
+          <div class="gallery-overlay">🔍 View</div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="gallery-item"
+          data-img="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800"
+          data-title="The Harvest Bowl"
+        data-desc="Brian's signature Harvest Bowl — tri-colour quinoa, slow-roasted root vegetables, spiced chickpeas and house-made tahini dressing, finished with a dusting of dukkah. Every ingredient on this plate came through our front door within 48 hours of being harvested. Made to order every afternoon until we sell out — which is usually by 2 PM."  data-desc="Brian's signature lunch bowl — tri-colour quinoa, roasted root vegetables, chickpeas and tahini. Made to order every afternoon.">
+          <div style="height:260px; background:url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600') center/cover; border-radius:12px;"></div>
+          <div class="gallery-overlay">🔍 View</div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="gallery-item"
+          data-img="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=800"
+          data-title="Limuru Strawberries"
+         data-desc="Strawberries from the cool Limuru highlands, sitting at 2,200 metres above sea level where the dramatic temperature swings give them an unmatched natural sweetness. They arrive every Tuesday and Thursday morning and are gone by Saturday without fail. If you want them, you know when to come — and you know to come early." data-desc="Strawberries from the Limuru highlands arriving every Tuesday and Thursday. We sell out by Saturday — no exceptions.">
+          <div style="height:260px; background:url('https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=600') center/cover; border-radius:12px;"></div>
+          <div class="gallery-overlay">🔍 View</div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="gallery-item"
+          data-img="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=800"
+          data-title="Hass Avocados"
+        data-desc="Kiambu-grown Hass avocados from a family farm we've worked with since 2019. The volcanic red soil of Kiambu produces avocados with an unusually high fat content — which is exactly what gives them that buttery, melt-in-your-mouth texture. We receive them slightly under-ripe and let them rest for exactly 48 hours before putting them on the shelf."  data-desc="Kiambu-grown Hass avocados. Buttery, creamy and always perfectly ripe when they hit our shelves.">
+          <div style="height:260px; background:url('https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600') center/cover; border-radius:12px;"></div>
+          <div class="gallery-overlay">🔍 View</div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="gallery-item"
+          data-img="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800"
+          data-title="Avocado Toast"
+         data-desc="Our signature avocado toast has been on the menu since the very day we opened the café counter in 2022. Thick-cut sourdough from a local Westlands bakery, generously smashed Hass avocado, house-ground dukkah, a perfectly poached free-range egg, dried chilli flakes and a squeeze of fresh lemon. Simple, honest and frankly impossible to improve." data-desc="Our signature avocado toast — sourdough, smashed Hass, dukkah, poached egg and chilli flakes. A Kale & Co. staple since day one.">
+          <div style="height:260px; background:url('https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600') center/cover; border-radius:12px;"></div>
+          <div class="gallery-overlay">🔍 View</div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="gallery-item"
+          data-img="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800"
+          data-title="Fresh Herb Bundles"
+         data-desc="Basil, rosemary, thyme and mint harvested at peak fragrance from our partner herb farm in Kiambu. The bundles are assembled by hand every morning before the store opens at 7 AM. Herbs lose their potency fast after cutting, which is why we only ever stock what arrived that morning — whatever remains at closing goes straight to Brian's kitchen." data-desc="Basil, rosemary, thyme and mint harvested at peak fragrance. Bundled by hand every morning before the store opens.">
+          <div style="height:260px; background:url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600') center/cover; border-radius:12px;"></div>
+          <div class="gallery-overlay">🔍 View</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" style="
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.92);
+  z-index:9999;
+  align-items:center;
+  justify-content:center;
+">
+  <div style="
+    background:white;
+    border-radius:16px;
+    max-width:640px;
+    width:90%;
+    overflow:hidden;
+    position:relative;
+  ">
+    <img id="lightbox-img" src="" alt="" style="width:100%; height:360px; object-fit:cover;" />
+    <div style="padding:1.5rem;">
+      <h3 id="lightbox-title" style="font-family:var(--font-display); color:var(--brown-deep);"></h3>
+      <p id="lightbox-desc" style="font-size:0.9rem; color:var(--text-mid); margin-top:0.5rem;"></p>
+    </div>
+    <button id="lightbox-close" style="
+      position:absolute;
+      top:1rem;
+      right:1rem;
+      background:var(--brown-deep);
+      color:white;
+      border:none;
+      border-radius:50%;
+      width:36px;
+      height:36px;
+      font-size:1rem;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    ">✕</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">Kale <span>&</span> Co.</div>
+        <p style="margin-top:0.8rem; font-size:0.88rem; max-width:280px;">Nairobi's organic grocery and café. Committed to honest food, local farmers, and your wellbeing since 2018.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Visit Us</h5>
+        <p style="font-size:0.88rem;">Sarit Centre, Ring Road Westlands<br>Nairobi, Kenya</p>
+        <p style="font-size:0.88rem; margin-top:0.5rem;">📞 +254 712 345 678<br>✉️ hello@kaleandco.co.ke</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Kale & Co. All rights reserved.</span>
+      <span>Made with 🌿 in Nairobi</span>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX JS -->
+<script>
+  // Gallery lightbox
+  const lightbox = document.getElementById('lightbox');
+
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      document.getElementById('lightbox-img').src = item.dataset.img;
+      document.getElementById('lightbox-title').textContent = item.dataset.title;
+      document.getElementById('lightbox-desc').textContent = item.dataset.desc;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  document.getElementById('lightbox-close').addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+  });
+</script>
 
 <script src="../vendor/bootstrap.bundle.min.js"></script>
 <script src="../js/main.js"></script>
